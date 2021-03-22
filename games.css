@@ -1,0 +1,80 @@
+
+body.n {
+	font-family: verdana,helvetica;
+	color: #000000;
+	background-color: #ab6620; 
+	margin-left:-8px; 
+	margin-top:-8px;
+	font-size: 10px;
+}
+body {
+	font-family: verdana,helvetica;
+	color: #000000;
+	background-color: #cfccf1;
+	font-size: 12px;
+}
+h1 {
+	font-family: verdana,helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffaa;
+}
+h2 {
+	font-family: verdana,helvetica;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+h3 {
+	font-family: verdana,helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+td {
+	font-family: verdana,helvetica;
+	color: #000000;
+	font-size: 11px;
+}
+a {
+	font-family: verdana,helvetica;
+	font-size: 11px;
+}
+
+.tabv {
+	font-family: verdana,helvetica;
+	color: #000000;
+	background-color: #ffffff;
+	font-weight: plain;
+	font-size: 9pt;
+}
+.tabcab {
+	font-family: verdana,helvetica;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 9pt;
+}
+.nh {
+	font-family: verdana,helvetica;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10pt;
+}
+p {
+	font-family: verdana,helvetica;
+	color: #000000;
+	font-size: 11px;
+}
+.h {
+	font-family: verdana,helvetica;
+	color: #3c3c5c;
+	background-color: #ffffff;
+	font-size: 12px;
+}
+.d {
+	font-family: verdana,helvetica;
+	color: #ffffff;
+	background-color: #fb7922;
+	font-size: 12px;
+}
+

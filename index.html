@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >   
+
+<html>
+<head>
+<title>Games App</title>
+<meta charset="UTF-8" />
+<link href="games.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="games.js"></script>
+</head>
+
+<body onload = "inicializa()">
+
+<h1>Games App</h1>
+<p>Um exemplo com HTML+CSS+Javascript e PHP<p>
+
+<h2>Tabela Usuários</h2>
+
+<table border=0 cellpadding=0 cellspacing=0>
+	<tr bgcolor=#ff0000> 
+	<td><img src=img/sp.gif width=10 height=25></td>
+	<td class=tabcab><img src=img/sp.gif width=180 height=4><br><b>Usuário</b></td>
+	<td class=tabcab><img src=img/sp.gif width=180 height=4><br><b>Nick</b></td>
+	<td class=tabcab><img src=img/sp.gif width=180 height=4><br><b>Cidade</b></td>
+	<td class=tabcab><img src=img/sp.gif width=180 height=4><br><b>Email</b></td>
+	<td class=tabcab><img src=img/sp.gif width=180  height=4><br><b>Idade</b></td>
+	<td><img src=img/sp.gif width=26 height=4></td>
+	</tr>
+</table>
+
+<table id='tab_usuarios' border=0 cellpadding=0 cellspacing=0></table>
+
+<form>
+	<table border=0 cellpadding=0 cellspacing=0>
+		<tr><td>Usuário:</td><td><input  type=text size=30 id='i_use' name=usuario></td></tr>
+		<tr><td>Nick:	</td><td> <input type=text size=30 id='i_nic' name=nick></td></tr>
+		<tr><td>Email:	</td><td> <input type="email" size=30 id='i_ema' name=email></td></tr>
+		<tr><td>Idade:	</td><td> <input type="number" size=3 min="1" id='i_ida' name=idade></td></tr>
+		<tr><td>Cidade:	</td><td><select id="listaCidades" size=1 name=cidade></select></td>
+		<td></td><td><button type="button" onclick="insereUsuario()">Insere usuario</button></td></tr> 
+	</table>
+</form>
+
+<h2>Tabela Jogos</h2>
+
+<table border=0 cellpadding=0 cellspacing=0>
+	<tr bgcolor=#33dd22>
+	<td><img src=img/sp.gif width=10 height=25></td>
+	<td class=tabcab><img src=img/sp.gif width=180 height=4><br><b>Jogo</b></td>
+	<td class=tabcab><img src=img/sp.gif width=180 height=4><br><b>Fabricante</b></td>
+	<td class=tabcab><img src=img/sp.gif width=180  height=4><br><b>Preço</b></td>
+	<td class=tabcab><img src=img/sp.gif width=180  height=4><br><b>Classificação</b></td>
+	<td><img src=img/sp.gif width=26 height=4></td>
+	</tr>
+</table>
+
+<table id='tab_jogos' border=0 cellpadding=0 cellspacing=0></table>
+
+<form>
+	<table border=0 cellpadding=0 cellspacing=0>
+		<tr><td>Jogo:</td><td><input type=text id='i_jog' name=jogo></td></tr>
+		<tr><td>Fabricante:</td><td><select id="listaFabricantes" size=1 name=fabricante></select></td>
+		<tr><td>Preço:	</td><td> <input type=text id='i_pre' name=preco></td></tr>
+		<tr><td>Classificação:</td><td> <input type="number" size=3 min="1" max="4" id='i_cla' name=classificacao></td>
+		<td></td><td><button type="button" onclick="insereJogo()">Insere jogo</button></td></tr> 
+	</table>	
+</form>
+
+<h2>Tabela Fórum</h2>
+
+<table border=0 cellpadding=0 cellspacing=0>
+	<tr bgcolor=#CCCC00>
+	<td><img src=img/sp.gif width=10 height=25></td>
+	<td class=tabcab><img src=img/sp.gif width=180 height=4><br><b>Remetente</b></td>
+	<td class=tabcab><img src=img/sp.gif width=180 height=4><br><b>Título da mensagem</b></td>
+	<td class=tabcab><img src=img/sp.gif width=180  height=4><br><b>Mensagem</b></td>
+	
+	</tr>
+</table>
+
+<table id='tab_forum' border=0 cellpadding=0 cellspacing=0></table>
+
+<form>
+	<table border=0 cellpadding=0 cellspacing=0>
+		<tr><td>Título:</td><td><input type=text id='titulo_forum' name=titulo></td></tr>
+		<tr><td>Mensagem:</td><td> <input type=text id='mensagem_forum' name=mensagem></td></tr>
+        <tr><td>Remetente:</td><td><select style="width: 177px;" id="listaRemetentes" size=1 name=remetentes></select></td>
+		<td></td><td><button type="button" onclick="insereJogo()"> Enviar Mensagem</button></td></tr> 
+	</table>	
+</form>
+
+
+</body>
+</html>
